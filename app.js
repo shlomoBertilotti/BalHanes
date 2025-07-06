@@ -1,16 +1,16 @@
 const billsData = [
-  { amount: 200, alt: "200 Shekel bill", src: "pictures/200shekel.png" },
-  { amount: 100, alt: "100 Shekel bill", src: "pictures/100shekel.png" },
-  { amount: 50, alt: "50 Shekel bill", src: "pictures/50shekel.png" },
-  { amount: 20, alt: "20 Shekel bill", src: "pictures/20shekel.png" },
+  { amount: 200, alt: "200 Shekel bill", src: "200shekel.png" },
+  { amount: 100, alt: "100 Shekel bill", src: "100shekel.png" },
+  { amount: 50, alt: "50 Shekel bill", src: "50shekel.png" },
+  { amount: 20, alt: "20 Shekel bill", src: "20shekel.png" },
 ];
 
 const coinsData = [
-  { amount: 10, alt: "10 Shekel coin", src: "pictures/10shekel.png" },
-  { amount: 5, alt: "5 Shekel coin", src: "pictures/5shekel.png" },
-  { amount: 2, alt: "2 Shekel coin", src: "pictures/2shekel.png" },
-  { amount: 1, alt: "1 Shekel coin", src: "pictures/1shekel.png" },
-  { amount: 0.5, alt: "Half Shekel coin", src: "pictures/halfShekel.png" },
+  { amount: 10, alt: "10 Shekel coin", src: "10shekel.png" },
+  { amount: 5, alt: "5 Shekel coin", src: "5shekel.png" },
+  { amount: 2, alt: "2 Shekel coin", src: "2shekel.png" },
+  { amount: 1, alt: "1 Shekel coin", src: "1shekel.png" },
+  { amount: 0.5, alt: "Half Shekel coin", src: "halfShekel.png" },
 ];
 
 const billsContainer = document.getElementById("bills");
