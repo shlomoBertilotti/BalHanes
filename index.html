@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mier Bal Hanes Pushka</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-left">Donation to the Mier Bal Hanes</div>
+    <div class="nav-right">
+      <a href="index.html">Donate</a>
+      <a href="donations.html">My Donations</a>
+      <a href="account.html">My Account</a>
+    </div>
+  </nav>
+
+  <section class="header-text">
+    <h2>Donation to the Mier Bal Hanes</h2>
+    <p>
+      This Pushka represents a timeless symbol of hope and charity cherished by Jewish communities through the centuries. Donating here continues that sacred tradition, helping those in need and keeping faith alive in every generation.
+    </p>
+  </section>
+
+  <main>
+    <div id="main-container">
+
+      <!-- Coins section -->
+      <section id="coins-section" aria-label="Coins">
+        <div id="coins" role="list"></div>
+      </section>
+
+      <!-- Pushka in the middle -->
+      <div id="pushka" aria-label="Tzedakah Pushka drop zone" role="region" tabindex="0">
+        <img src="pictures/Pushka.png" alt="Tzedakah Pushka" />
+      </div>
+
+      <!-- Bills section -->
+      <section id="bills-section" aria-label="Bills">
+        <div id="bills" role="list"></div>
+      </section>
+      
+    </div>
+
+    <!-- Message area -->
+    <div id="message" aria-live="polite" role="status"></div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

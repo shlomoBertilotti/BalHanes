@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Account – Mier Bal Hanes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-left">Donation to the Mier Bal Hanes</div>
+    <div class="nav-right">
+      <a href="index.html">Donate</a>
+      <a href="donations.html">My Donations</a>
+      <a href="account.html" class="active">My Account</a>
+    </div>
+  </nav>
+
+  <section class="header-text">
+    <h2>My Account</h2>
+    <p>
+      Manage your personal details and donation settings below.
+    </p>
+  </section>
+
+  <main class="account-container">
+    <form class="account-form">
+      <div class="form-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Your full name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+      </div>
+
+      <div class="form-group">
+        <label for="paymentMethod">Payment Method</label>
+        <select id="paymentMethod" name="paymentMethod" required>
+          <option value="">Select a method</option>
+          <option value="credit">Credit Card</option>
+          <option value="bank">Bank Account</option>
+          <option value="paypal">PayPal</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="accountNumber">Account/Card Number</label>
+        <input type="text" id="accountNumber" name="accountNumber" placeholder="Enter card or account number" required />
+      </div>
+
+      <div class="form-group">
+        <button type="submit">Save Changes</button>
+      </div>
+    </form>
+  </main>
+
+</body>
+</html>

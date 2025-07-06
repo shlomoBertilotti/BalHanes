@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Donations – Mier Bal Hanes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-left">Donation to the Mier Bal Hanes</div>
+    <div class="nav-right">
+      <a href="index.html">Donate</a>
+      <a href="donations.html" class="active">My Donations</a>
+      <a href="account.html">My Account</a>
+    </div>
+  </nav>
+
+  <section class="header-text">
+    <h2>My Donations</h2>
+    <p>
+      Below is a record of all your past donations to Mier Bal Hanes. May your giving bring many blessings.
+    </p>
+  </section>
+
+  <main class="donations-container">
+    <ul id="donation-list">
+      <!-- Filled dynamically -->
+    </ul>
+  </main>
+
+  <script>
+    const list = document.getElementById("donation-list");
+    const donations = JSON.parse(localStorage.getItem("donations") || "[]");
+
+    if (donations.length === 0) {
+      list.innerHTML = "<li class='no-donations'>You haven't donated yet. Go to the Donate page to start!</li>";
+    } else {
+      donations.reverse().forEach(d => {
+        const li = document.createElement("li");
+        const date = new Date(d.date).toLocaleDateString();
+        li.innerHTML = `
+          <div class="donation-card">
+            <span class="amount">₪${d.amount}</span>
+            <span class="date">${date}</span>
+          </div>
+        `;
+        list.appendChild(li);
+      });
+    }
+  </script>
+
+</body>
+</html>
